@@ -1,0 +1,8 @@
+#!/sbin/openrc-run
+
+name=$RC_SVCNAME
+command="/usr/bin/python3 /opt/micro-dvd/app.py"
+command_args=""
+command_user="root"
+pidfile="/var/run/${RC_SVCNAME}.pid"
+command_background="yes"
